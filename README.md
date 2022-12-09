@@ -1,3 +1,4 @@
+ Anh chị leader review code thấy code của em chưa ổn phần nào, anh chị vui lòng bớt chút thời gian comment để em có thể rút kinh nghiệm cho bản thân ạ. Em xin cảm ơn anh chị rất nhiều ạ!
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
