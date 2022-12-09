@@ -1,0 +1,15 @@
+.header-image {
+    margin: auto;
+    padding-top: 68px;
+    margin-bottom: 11px;
+    width: 287px;
+    text-align: center;
+}
+
+.header-box {
+    width: 227px;
+    margin: auto;
+    display: block;
+    text-align: center;
+    padding-bottom: 63px;
+}

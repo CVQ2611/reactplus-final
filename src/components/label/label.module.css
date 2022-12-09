@@ -1,0 +1,11 @@
+.label {
+    display: block;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.link-to {
+    text-decoration: none;
+    color: #D8605B;
+}
