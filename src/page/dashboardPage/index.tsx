@@ -34,7 +34,7 @@ function DashboardPage() {
                 </Button>
             </Row>
             <Row style={{ backgroundColor: 'white', flexDirection: 'column' }}>
-                <Image src={Clock} style={{ display: 'block', width: '120px', height: '120px', margin: '32px auto 0' }} />
+                <Image src={Clock} style={{ display: 'block', width: '120px', height: '120px', margin: '32px auto 0' }} preview={false} />
                 <Title style={{ fontSize: '12px', lineHeight: '14px', letterSpacing: '0.06em', textAlign: 'center' }}>Good Afternoon</Title>
                 <Row style={{ flexDirection: 'column' }}>
                     <Title style={{ fontSize: '18px', lineHeight: '14px', letterSpacing: '0.06em', margin: '0 0 20px 20px' }}>Tasks List</Title>

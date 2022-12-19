@@ -13,6 +13,7 @@ const cx = classNames.bind(styles)
 
 function FormRegister() {
     const [succes, setSucces] = useState<boolean>(false)
+    const [errorMess, setErrorMess] = useState<boolean>(false)
     const { handleSubmit, control, formState: { errors } } = useForm<User>({
         mode: 'onSubmit',
         resolver: yupResolver(schemaCreate)
@@ -30,7 +31,7 @@ function FormRegister() {
                 setSucces(true)
                 return res
             } catch (error) {
-                return error
+                setErrorMess(true)
             }
         }
         postUserData()
@@ -72,6 +73,7 @@ function FormRegister() {
             </Form.Item>
             <Button htmlType="submit" className={cx('start-button')} type={'text'}>Register</Button>
             {succes && <Navigate to={'/login'} />}
+            {errorMess && <Text type="danger">Có lỗi sảy ra bạn thử lại sau nhé!</Text>}
         </Form>
     )
 }
