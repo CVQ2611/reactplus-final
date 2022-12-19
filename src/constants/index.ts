@@ -33,9 +33,9 @@ export const schemaCreate = yup.object().shape({
         .test('fullName', 'Please input true your Full name', (name) => !!name && name.trim().length > 0),
     email: yup.string().email('Please input your true email').required('Please input your email'),
     password: yup.string().required('Please enter your password'),
-    passwordConfirm: yup.string().when('password', (password, field) =>
-        password ? field.required().oneOf([yup.ref('password')]) : field
-    ),
+    passwordConfirm: yup.string()
+        .required('Please retype your password.')
+        .oneOf([yup.ref('password')], 'Your passwords do not match.')
 }).required();
 
 export const schemaLogIn = yup.object().shape({
